@@ -10,9 +10,9 @@ void main(void)
 	WDTCTL = WDTPW | WDTHOLD;	// stop watchdog timer
 	P1DIR = 0x40;
 	//PWM Generator
-	TACCR0 = 62500-1;             // PWM Time Period/ frequency (1 KHz)
+	TACCR0 = 62500-1;             // PWM Time Period/ frequency (2 Hz)
 	TACCTL1 = OUTMOD_7;          // reset/set mode 7 for output signal
-	TACCR1 = 6250;                // PWM Duty cycle is 75%
+	TACCR1 = 6250;                // PWM Duty cycle is 10%
 	TACTL = TASSEL_2 + MC_1 + ID_3;   // SMCLK and Up Mode
 
 	TA0CCTL0 |= CCIE;
