@@ -1,4 +1,5 @@
 # EmbeddedLab5
+This code is run with an MSP430G2553.
 ## Lab5_1.c
 This is the code for part 1. It toggles the red and green LEDs every 256ms. The WDT is put into timer mode and used as the timer to toggle the LEDs.
 ## Lab5_2.c
